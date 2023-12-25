@@ -11,7 +11,7 @@
 //loading view
 $(() => {
   $(window).on('load', () => {
-    $('.l-loader__content').delay(600).fadeout(600);
+    $('.l-loader__content').delay(600).fadeOut(600);
     $('.l-loader__container').delay(900).fadeOut(800);
   })
   setTimeout(() => {
