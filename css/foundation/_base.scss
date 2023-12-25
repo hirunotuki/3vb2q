@@ -1,0 +1,24 @@
+@use "./color" as *;
+@use "./variable" as *;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+background: $c-base;
+  font: {
+    // family:"agenda-one","source-han-sans-japanese",sans-serif;
+    family:'line-ubuntu',sans-serif;
+    size: 16px;
+    weight: 400;
+  }
+
+  color:$c-main
+}
+
+*:focus-visible {
+  outline: inherit;
+}

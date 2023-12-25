@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問合せ | 学生団体ivote</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="stylesheet" href="https://kanwakyudai.github.io/i-vote/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kanwakyudai.github.io/i-vote/js/script.js"></script>
+  <script
+    src="https://webfont.fontplus.jp/accessor/script/fontplus.js?HjYIZvJNrEU%3D&box=a95e1~5~obE%3D&chws=1&aa=1&ab=2"></script>
+</head>
+
+<body>
+  <div class="l-loader__container" style="display: none;">
+    <div class="l-loader__content"></div>
+  </div>
+  <header class="l-header js-header"></header>
+  <main class="l-main">
+    <div class="l-main__inner">
+      <div class="l-mv js-mv">
+        <div class="l-mv__inner">
+          <div class="l-mv__wrapper">
+            <h1 class="l-mv__heading">お問合せ</h1>
+            <p class="l-mv__eng_text">Contact</p>
+          </div>
+        </div>
+      </div>
+      <div class="l-content">
+        <div class="l-content__inner">
+          <div class="l-heading">
+            <p class="l-heading__caption">
+              学生団体ivoteへのお問合せは以下のフォームより承ります。<br>入会のご希望や出前授業・取材のご依頼などお気軽にお寄せください。<br>なおご返信に数日頂戴する場合がございます。
+            </p>
+          </div>
+          <div class="p-contact-form">
+            <div class="p-contact_form__wrapper">
+              <form action="contact.php" class="p-contact_form__form">
+                <div class="p-contact_form__item">
+                  <label for="email" class="p-contact_form__label--req">メールアドレス</label>
+                  <input type="email" class="p-contact_form__input--input" name="email" id="email"
+                    placeholder="email@example.com" required />
+                </div>
+                <div class="p-contact_form__item">
+                  <label for="name" class="p-contact_form__label--req">お名前</label>
+                  <input type="text" class="p-contact_form__input--input" name="name" id="name" placeholder="お名前"
+                    required />
+                </div>
+                <div class="p-contact_form__item">
+                  <label for="subject" class="p-contact_form__label--req">お問合せの目的</label>
+                  <div class="p-contact_form__select_wrapper">
+                    <select type="emeil" class="p-contact_form__input--select" name="subject" id="subject" required>
+                      <option value="" class="p-contact_form__input--placeholder" selected disabled hidden>
+                        お問合せ目的を選択してください。</option>
+                      <option value="joinUs" class="p-contact_form__option">会議見学・入会のご希望</option>
+                      <option value="" class="p-contact_form__option">出前授業のご依頼</option>
+                      <option value="requestInterview" class="p-contact_form__option">取材・メディア出演のご依頼</option>
+                      <option value="others" class="p-contact_form__option">その他</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="p-contact_form__item">
+                  <label for="content" class="p-contact_form__label--req">お問合せ内容</label>
+                  <textarea name="content" id="content" class="p-contact_form__input--textarea" placeholder="ここにテキストを入力"
+                    required></textarea>
+                </div>
+                <input type="submit" name="submit" id="submit" class="p-contact_form__submit" value="内容を送信">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="l-footer js-footer"></footer>
+</body>
+
+</html>

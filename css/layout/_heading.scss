@@ -1,0 +1,50 @@
+@use "../foundation" as *;
+
+.l-heading {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+
+  &__heading {
+    font: {
+      size: 2rem;
+      weight: 700;
+    }
+
+    line-height: 1;
+    letter-spacing: .05em;text-align: center;
+    word-break: keep-all;
+  }
+
+  &__caption {
+    font: {
+      size: 1rem;
+      weight: 500;
+    }
+
+    $lh: 2;
+    line-height: $lh;
+    letter-spacing: .05em;
+    text-align: center;
+    word-break: keep-all;
+    @include line-height-crop($lh);
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 2px;
+    border-radius: 1.5px;
+    background: $c-main;
+  }
+}

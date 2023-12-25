@@ -1,0 +1,88 @@
+@use "../foundation" as *;
+
+.l-mv {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 120px;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("https://kanwakyudai.github.io/i-vote/images/child_mv.png") center 60% / cover;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      $gradient_color: white;
+      background: linear-gradient(177deg, rgba($gradient_color, 1) 0%, 30%,
+          rgba($gradient_color, .75) 45%,
+          rgba($gradient_color, .3) 100%);
+
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__heading {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+
+    font: {
+      size: 3rem;
+      weight: 700;
+    }
+
+    line-height: 1;
+    word-break: keep-all;
+
+    // text-shadow: 6px 6px 6px $c-base;
+    // transform: translateY(.15em);
+    z-index: 2;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+      height: 210px;
+      width: 3.6px;
+      background: linear-gradient(0deg, rgba($c-main, 1) 20%,
+          rgba($c-base, .25) 50%,
+          rgba($c-base, 0) 85%);
+
+    }
+  }
+
+  &__eng_text {
+    position: absolute;
+    bottom: -.4em;
+    // right: 20%;
+    left: calc(25% + 6rem);
+
+    font: {
+      size: 4rem;
+      weight: 700;
+      style: italic
+    }
+
+    line-height: 1;
+    word-break: keep-all;
+    // color: rgba($c-main,.45);
+    color: lighten($c-main, 40%);
+    color: rgba(lighten($c-main, 40%), .3);
+    z-index: 1;
+    mix-blend-mode: difference;
+  }
+}

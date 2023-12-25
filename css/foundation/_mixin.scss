@@ -1,0 +1,40 @@
+$breakpoint: (
+  sm: 'width < 768px',
+  md: '768px <= width < 1024px',
+  lg: '1024px < width'
+  ) !default;
+
+@mixin media-query($bp) {
+  @media (#{map-get($breakpoint, $bp)}) {
+    @content;
+  }
+}
+
+@mixin line-height-crop($line-height) {
+  &::before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top:calc((1 - #{$line-height}) * .5em
+  );
+}
+
+
+&::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-bottom:calc((1 - #{$line-height}) * .5em);
+}
+}
+@mixin line-height-crop_inline($line-height) {
+  &::before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top:calc((1 - #{$line-height}) * .5em);
+  }
+}

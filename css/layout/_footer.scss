@@ -1,0 +1,274 @@
+@use "../foundation" as *;
+
+// .l-footer {
+//   width: 100%;
+//   $bg: $c-accent-pale;
+//   $bg: $c-main;
+//   $fg: $c-base;
+//   background: $bg;
+//   color: $fg;
+
+//   &__inner {
+//     width: fit-content;
+//     margin: auto;
+//     padding: 75px 0;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+//     gap: 75px;
+//   }
+
+//   &__nav {
+//     font: {
+//       size: 1rem;
+//       weight: 500
+//     }
+
+//     line-height: 1;
+//     text-align: center;
+//   }
+
+//   &__list {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+//     gap: 1.5em;
+//   }
+
+//   &__item {
+//     transition: 150ms ease-in-out;
+
+//     &:hover {
+//       letter-spacing: .03em;
+//       transition: 150ms ease-in-out;
+//     }
+//   }
+
+//   &__misc {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 66px;
+//   }
+
+//   &__sns {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     align-items: center;
+//     gap: 42px;
+//   }
+
+
+//   &__sns_icon {
+//     height: 18px;
+
+//     &--ig {
+//       height: 20px;
+//     }
+//   }
+
+//   &__ivote_media {
+//     width: fit-content;
+//     height: fit-content;
+//     padding: 6px 12px;
+//     border-radius: 4px 12px 12px 4px;
+//     background: $c-accent;
+//   }
+
+//   &__media_link {
+//     font: {
+//       size: 1rem;
+//       weight: 700;
+//     }
+
+//     line-height: 1;
+//     color: $c-main;
+//   }
+
+//   &__brand {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+//     gap: 12px;
+//   }
+
+//   &__logo_wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+//     gap: 3px;
+//   }
+
+//   &__logo {
+//     height: 30px;
+//   }
+
+//   &__since {
+//     font: {
+//       size: .8rem;
+//       weight: 700;
+//     }
+//   }
+
+//   &__copy {
+//     font: {
+//       size: .9rem;
+//       weight: 500;
+//     }
+
+//     line-height: 1;
+//   }
+// }
+
+.l-footer {
+  width: 100%;
+  $bg: $c-accent-pale;
+  $bg: $c-main;
+  $fg: $c-base;
+  background: $bg;
+  color: $fg;
+
+  &__inner {
+    width: fit-content;
+    margin: auto;
+    padding: 90px 0 45px;
+    display: grid;
+    grid-template-columns: auto clamp(150px, 4.018rem + 8.371vw, 225px) auto;
+    grid-template-rows: auto 45px auto;
+  }
+
+  &__nav {
+    grid-area: 1/1/2/2;
+
+    font: {
+      size: 1rem;
+      weight: 500
+    }
+
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: clamp(30px, 0.804rem + 1.674vw, 45px);
+  }
+
+  &__sns_container {
+    margin-left: 3px;
+    grid-area: 3/1/4/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__sns_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 42px;
+  }
+
+  &__sns_icon {
+    height: 18px;
+
+    &--ig {
+      height: 20px;
+    }
+  }
+}
+
+%__btn {
+  width: 120px;
+  height: 33px;
+  border-radius: 12px 4px 12px 4px;
+}
+
+
+.l-footer {
+  &__link_wrapper {
+    grid-area: 1/3/2/4;
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+  }
+
+  &__btn {
+    &--media {
+      @extend %__btn;
+      background: $c-accent;
+    }
+
+    &--contact {
+      @extend %__btn;
+      background: $c-base;
+    }
+  }
+
+  &__link {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 4px 12px 4px;
+
+    font: {
+      size: .93rem;
+      weight: 500;
+    }
+
+    line-height: 1;
+    color:$c-main
+  }
+
+  &__brand {
+    grid-area: 3/3/4/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3px;
+  }
+  &__logo_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+  }
+
+  &__logo {
+    height: 30px;
+  }
+
+  &__since {
+    margin-left: 5px;
+    font: {
+      size: .75rem;
+      weight: 500;
+    }
+    letter-spacing: .05em;
+  }
+
+  &__copy {
+    margin-top: 2px;
+    font: {
+      size: .93rem;
+      weight: 500;
+    }
+
+    $lh: 1.2;
+    line-height: $lh;
+    @include line-height-crop($lh)
+  }
+}

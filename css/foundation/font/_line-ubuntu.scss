@@ -1,0 +1,132 @@
+@mixin adjuster() {
+  size-adjust: 105%;
+  ascent-override: 92%;
+}
+
+@mixin ur-latin() {
+  unicode-range: U+0000-00FF,
+    U+0131,
+    U+0152-0153,
+    U+02BB-02BC,
+    U+02C6,
+    U+02DA,
+    U+02DC,
+    U+0304,
+    U+0308,
+    U+0329,
+    U+2000-206F,
+    U+2074,
+    U+20AC,
+    U+2122,
+    U+2191,
+    U+2193,
+    U+2212,
+    U+2215,
+    U+FEFF,
+    U+FFFD;
+  ;
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 400;
+  }
+
+  src:url("../font/LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Rg.woff2")
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 500;
+  }
+
+  src:url("../font/LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Bd.woff2")
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 700;
+  }
+
+  src:url("../font/LINE_Seed_JP/Web/WOFF2/LINESeedJP_OTF_Eb.woff2")
+}
+
+
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 400;
+    style: normal;
+  }
+
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+  @include ur-latin();
+  @include adjuster();
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 400;
+    style: italic;
+  }
+
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCu6KVjbNBYlgoKej70l0k.woff2) format('woff2');
+
+  @include ur-latin();
+  @include adjuster();
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 500;
+    style: normal;
+  }
+
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jsGyN.woff2) format('woff2');
+  @include ur-latin();
+  @include adjuster();
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 500;
+    style: italic;
+  }
+
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCp6KVjbNBYlgoKejYHtFyPN4E.woff2) format('woff2');
+
+  @include ur-latin();
+  @include adjuster();
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 700;
+    style: normal;
+  }
+
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjsGyN.woff2) format('woff2');
+  @include ur-latin();
+  @include adjuster();
+}
+
+@font-face {
+  font: {
+    family: "line-ubuntu";
+    weight: 700;
+    style: italic;
+  }
+
+  src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCp6KVjbNBYlgoKejZPslyPN4E.woff2) format('woff2');
+
+  @include ur-latin();
+  @include adjuster();
+}

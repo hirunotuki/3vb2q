@@ -1,0 +1,31 @@
+@use "../foundation" as *;
+
+.p-philosophy-content {
+  $lh: 2.5;
+
+  &__wrapper {
+    width: max-content;
+    max-width: 100%;
+    margin: auto;
+
+    font: {
+      size: 1rem;
+      weight: 400;
+    }
+
+    line-height: $lh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc($lh * 1em);
+  }
+
+  &__para {
+    display: inline;
+
+
+
+    @include line-height-crop_inline($lh)
+  }
+}

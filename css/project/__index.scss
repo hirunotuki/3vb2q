@@ -1,0 +1,82 @@
+@use "../foundation" as *;
+
+.p-index {
+  &-mv {
+    width: 100%;
+    height: 100vh;
+
+    &__inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      background: url('https://kanwakyudai.github.io/i-vote/images/index_mv.png') center bottom / cover;
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        $gradient_color: lighten($c-accent, 30%);
+        background: linear-gradient(177deg, rgba($gradient_color, 1) 9%, 30%,
+            rgba($gradient_color, .1) 50%,
+            rgba($gradient_color, 0) 100%);
+        backdrop-filter: blur(1.5px);
+      }
+    }
+
+    &__text {
+      position: relative;
+      z-index: 1;
+
+      margin: {
+        left: 105px;
+        bottom: 90px;
+      }
+
+      padding-left: 45px;
+
+      font: {
+        size: 5rem;
+        size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
+        weight: 500;
+        feature-settings: 'palt';
+      }
+
+      $line-height: 1.2;
+      line-height: $line-height;
+      letter-spacing: .03em;
+      color: $c-base;
+      text-shadow: 6px 3px 12px rgba(darken($c-accent, 60%), .6);
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: calc((1 - $line-height) * -1em);
+        left: 0;
+        width: 3px;
+        height: calc(100% + ((1 - $line-height) * 1em));
+        background: $c-base;
+        box-shadow: 6px 3px 15px rgba(darken($c-accent, 60%), .75);
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        margin-bottom:calc((1 - #{$line-height}) * .5em);
+      }
+    }
+  }
+
+
+}

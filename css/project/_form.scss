@@ -1,0 +1,172 @@
+@use "../foundation" as *;
+
+.p-contact_form {
+  &__wrapper {
+    width: 450px;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}
+
+%__label {
+  display: block;
+  padding-left: .2rem;
+
+  font: {
+    size: 1rem;
+    weight: 500;
+  }
+}
+
+.p-contact_form {
+  &__label {
+    @extend %__label;
+
+    &--req {
+      @extend %__label;
+
+      &::after {
+        display: inline;
+        content: "*";
+        margin-left: .1em;
+
+        font: {
+          size: 1em;
+          weight: 500;
+        }
+
+        color:red
+      }
+    }
+  }
+}
+
+%__input {
+  width: 100%;
+  height: 2.5rem;
+  padding: 3px 15px;
+  border-radius: 6px;
+
+  font: {
+    size: 1rem
+  }
+
+  background: $c-base;
+  border: solid 1px lighten($c-main, 70%);
+  box-shadow: 1px 1px 3px rgba($c-main, .3);
+
+  &:focus {
+    box-shadow: 2px 2px 1px rgba($c-accent-pale, 1);
+
+  }
+}
+
+%--placeholder {
+  color: lighten($c-main, 45%);
+
+  font: {
+    size: .8em;
+    weight: 500;
+  }
+}
+
+.p-contact_form {
+  &__input {
+    &--input {
+      @extend %__input;
+
+      &::placeholder {
+        @extend %--placeholder;
+      }
+    }
+
+    &--select {
+      @extend %__input;
+
+      &:invalid {
+        @extend %--placeholder;
+      }
+    }
+
+    &--textarea {
+      @extend %__input;
+      resize: none;
+      height: 10rem;
+      $lh: 2;
+      line-height: calc($lh * 1em);
+      @include line-height-crop($lh);
+
+      &::placeholder {
+        @extend %--placeholder
+      }
+    }
+  }
+
+  &__select_wrapper {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 7.5px;
+      background: rgba($c-main, .6);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+
+    }
+  }
+
+  &__option {
+    font: {
+      size: 1rem
+    }
+
+    color: $c-main;
+  }
+
+  &__submit {
+    width: 150px;
+    height: 42px;
+    border-radius: 21px;
+    border: solid 1px lighten($c-main, 70%);
+    box-shadow: 1px 1px 3px rgba($c-main, .3);
+
+    font: {
+      size: 1rem;
+      weight: 500;
+    }
+
+    color: $c-main;
+    // color:$c-base;
+    text-align: center;
+    line-height: 1;
+    transition:150ms ease-in-out;
+
+    &:hover {
+      box-shadow: 2px 3px 1px 1px $c-accent;
+      transform: translate(-.5px, -1px);
+      transition: 300ms ease-in-out;
+    }
+  }
+}
