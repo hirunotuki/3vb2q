@@ -1048,4 +1048,78 @@ html {
   width: 0;
   height: 0;
   margin-top: calc((1 - 2.5) * 0.5em);
+}
+
+.p-members-card__grid {
+  position: relative;
+}
+.p-members-card__card {
+  width: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 2px 3px 6px rgba(33, 33, 33, 0.6);
+}
+.p-members-card__img_box {
+  width: 100%;
+  height: 180px;
+  background: #e6c9a9;
+}
+.p-members-card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-members-card__profile {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.p-members-card__role {
+  font-weight: 700;
+}
+.p-members-card__name_jpn {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+.p-members-card__name_roman {
+  margin-top: 3px;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+.p-members-card__misc {
+  width: 100%;
+}
+.p-members-card__heading {
+  font-weight: 700;
+}
+.p-members-card__text {
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.p-members-card__text::before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: calc((1 - 1.5) * 0.5em);
+}
+.p-members-card__text::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-bottom: calc((1 - 1.5) * 0.5em);
 }/*# sourceMappingURL=style.css.map */
