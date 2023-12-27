@@ -5875,7 +5875,7 @@ html {
 .l-loader__content {
   width: 100%;
   height: 100%;
-  background-image: url("https://kanwakyudai.github.io/i-vote/images/brand/logo--fff.svg");
+  background-image: url("https://hirunotuki.github.io/i-vote_24/images/brand/logo--fff.svg");
   background-size: 150px auto;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6395,7 +6395,7 @@ html {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  background: url("https://hirutnotuki.github.io/i-vote_24/images/index_mv.svg") center bottom/cover;
+  background: url("https://hirunotuki.github.io/i-vote_24/images/index_mv.svg") center bottom/cover;
 }
 .p-index-mv__inner::after {
   display: block;
