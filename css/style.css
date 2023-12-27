@@ -623,7 +623,7 @@ html {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  background: url('https://hirunotuki.github.io/i-vote_"4/images/index_mv.svg') center bottom/cover;
+  background: url("https://hirunotuki.github.io/i-vote_24/images/index_mv.svg") center bottom/cover;
 }
 .p-index-mv__inner::after {
   display: block;
