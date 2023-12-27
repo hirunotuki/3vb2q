@@ -1,0 +1,27 @@
+@use "../foundation" as *;
+
+.p-neutrality-content {
+  $lh: 2.5;
+
+  &__wrapper {
+    width: max-content;
+    max-width: 780px;
+    margin: auto;
+
+    font: {
+      size: 1rem;
+      weight: 400;
+    }
+
+    line-height: $lh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc($lh * 1em);
+  }
+
+    &__para {
+      @include line-height-crop($lh)
+    }
+}

@@ -5,7 +5,7 @@
 
   &__wrapper {
     width: max-content;
-    max-width: 100%;
+    max-width: 780px;
     margin: auto;
 
     font: {
@@ -22,10 +22,7 @@
   }
 
   &__para {
-    display: inline;
-
-
-
-    @include line-height-crop_inline($lh)
+    // display: inline;
+    @include line-height-crop($lh)
   }
 }

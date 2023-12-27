@@ -1,7 +1,7 @@
 @use "../foundation" as *;
 
-// .l-content {
-//   &__inner {
-//     padding: 0 45px
-//   }
-// }
+.l-main{
+  &__inner{
+    margin-bottom: 120px;
+  }
+}
