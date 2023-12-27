@@ -11,8 +11,8 @@ $(() => {
 
 //load header & footer
 $(() => {
-  $('.js-header').load('https://kanwakyudai.github.io/i-vote/component/header.html')
-  $('.js-footer').load('https://kanwakyudai.github.io/i-vote/component/footer.html')
+  $('.js-header').load('https://kanwakyudai.github.io/i-vote/include/header.html')
+  $('.js-footer').load('https://kanwakyudai.github.io/i-vote/include/footer.html')
 })
 
 // shrink header on scroll
