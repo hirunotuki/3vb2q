@@ -72,6 +72,7 @@ $(() => {
   function membersResize() {
     numOfCol = Math.floor((containerW + gapXMin) / colW)
     gapX = Math.min(gapXMax, ((containerW - ((colW - gapX) * numOfCol)) / (numOfCol - 1)))
+    gapY = gapX
     colW = $('.js-card').outerWidth() + gapX;
     containerW = colW * numOfCol - gapX;
     console.log(numOfCol, gapX, colW, containerW)
