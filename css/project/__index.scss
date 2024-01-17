@@ -44,9 +44,10 @@
       padding-left: 45px;
 
       font: {
-        size: 5rem;
+        family: 'Zen Kaku Gothic New',serif;
+        // size: 5rem;
         size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
-        weight: 500;
+        weight: 900;
         feature-settings: 'palt';
       }
 
