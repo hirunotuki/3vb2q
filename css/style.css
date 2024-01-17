@@ -195,11 +195,11 @@ html {
   border-radius: 1px;
   background: #ffac4d;
   z-index: 1;
-  transition: width 150ms ease-in-out;
+  transition: width 240ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .l-header__item:hover::after {
   width: 100%;
-  transition: width 300ms ease-in-out;
+  transition: width 420ms cubic-bezier(0.51, 0.17, 0.2, 0.96);
 }
 .l-header__item.is-current::before {
   display: block;
@@ -1042,6 +1042,7 @@ html {
   width: max-content;
   max-width: 780px;
   margin: auto;
+  font-family: "Zen Kaku Gothic New", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2.5;
