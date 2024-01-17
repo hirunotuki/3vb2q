@@ -1012,6 +1012,7 @@ html {
   width: max-content;
   max-width: 780px;
   margin: auto;
+  font-family: "Zen Kaku Gothic New", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2.5;
@@ -1150,6 +1151,7 @@ html {
   width: max-content;
   max-width: 780px;
   margin: auto;
+  font-family: "Zen Kaku Gothic New", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2.5;
@@ -1171,23 +1173,6 @@ html {
   margin-top: calc((1 - 2.5) * 0.5em);
 }
 .p-message-content__para::after {
-  display: block;
-  content: "";
-  width: 0;
-  height: 0;
-  margin-bottom: calc((1 - 2.5) * 0.5em);
-}
-.p-message-content__para--ta_right {
-  text-align: right;
-}
-.p-message-content__para--ta_right::before {
-  display: block;
-  content: "";
-  width: 0;
-  height: 0;
-  margin-top: calc((1 - 2.5) * 0.5em);
-}
-.p-message-content__para--ta_right::after {
   display: block;
   content: "";
   width: 0;

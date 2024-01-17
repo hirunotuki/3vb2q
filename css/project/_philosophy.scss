@@ -9,6 +9,7 @@
     margin: auto;
 
     font: {
+      family: 'Zen Kaku Gothic New', serif;
       size: 1rem;
       weight: 400;
     }
@@ -22,7 +23,6 @@
   }
 
   &__para {
-    // display: inline;
     @include line-height-crop($lh)
   }
 }
