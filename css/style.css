@@ -1102,18 +1102,18 @@ html {
   font-size: 0.9rem;
 }
 .p-members-card__role {
-  font-weight: 700;
+  font-weight: 900;
 }
 .p-members-card__name_jpn {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   letter-spacing: 0.2em;
 }
 .p-members-card__name_roman {
   margin-top: 3px;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   letter-spacing: 0.12em;
 }
@@ -1121,7 +1121,7 @@ html {
   width: 100%;
 }
 .p-members-card__heading {
-  font-weight: 700;
+  font-weight: 900;
 }
 .p-members-card__text {
   margin-top: 9px;
@@ -1176,4 +1176,7 @@ html {
 
 .u-taright {
   text-align: right;
+}
+.u-fvcc2sc {
+  font-variant-caps: all-small-caps;
 }/*# sourceMappingURL=style.css.map */
