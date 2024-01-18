@@ -29,7 +29,7 @@
 
   font: {
     size: 1rem;
-    weight: 500;
+    weight: 700;
   }
 }
 
@@ -45,10 +45,10 @@
         content: "*";
         margin-left: .1em;
 
-        font: {
-          size: 1em;
-          weight: 500;
-        }
+        // font: {
+        //   size: 1em;
+        //   weight: 500;
+        // }
 
         color:red
       }
@@ -62,9 +62,9 @@
   padding: 3px 15px;
   border-radius: 6px;
 
-  font: {
-    size: 1rem
-  }
+  // font: {
+  //   size: 1rem
+  // }
 
   background: $c-base;
   border: solid 1px lighten($c-main, 70%);
@@ -81,7 +81,7 @@
 
   font: {
     size: .8em;
-    weight: 500;
+    weight: 700;
   }
 }
 
@@ -138,9 +138,9 @@
   }
 
   &__option {
-    font: {
-      size: 1rem
-    }
+    // font: {
+    //   size: 1rem
+    // }
 
     color: $c-main;
   }
@@ -153,8 +153,8 @@
     box-shadow: 1px 1px 3px rgba($c-main, .3);
 
     font: {
-      size: 1rem;
-      weight: 500;
+      // size: 1rem;
+      weight: 700;
     }
 
     color: $c-main;
