@@ -79,9 +79,9 @@
 
 html {
   background: #ffffff;
-  font-family: "line-ubuntu", sans-serif;
+  font-family: "line-ubuntu", "Helvetica Neue", "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   color: #212121;
 }
 
@@ -1178,4 +1178,8 @@ html {
   width: 0;
   height: 0;
   margin-bottom: calc((1 - 2.5) * 0.5em);
+}
+
+.u-taright {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

@@ -8,12 +8,13 @@
 }
 
 html {
-background: $c-base;
+  background: $c-base;
+
   font: {
     // family:"agenda-one","source-han-sans-japanese",sans-serif;
-    family:'line-ubuntu',sans-serif;
+    family: 'line-ubuntu', 'Helvetica Neue', 'Segoe UI', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
     size: 17px;
-    weight: 400;
+    weight: 500;
   }
 
   color:$c-main
