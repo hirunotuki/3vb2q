@@ -9,9 +9,7 @@
     margin: auto;
 
     font: {
-      family: 'Zen Kaku Gothic New', serif;
-      size: 1rem;
-      weight: 400;
+      family:$v-ff-default--latin,'Zen Kaku Gothic New',$v-ff-default--jpn,sans-serif;
     }
 
     line-height: $lh;
