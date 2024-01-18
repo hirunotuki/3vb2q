@@ -89,17 +89,17 @@
       color: $c-base;
       text-shadow: 6px 3px 6px rgba(darken($c-accent, 60%), .3);
 
-      &::before {
-        display: block;
-        content: "";
-        position: absolute;
-        top: calc((1 - $line-height) * -1em);
-        left: 0;
-        width: 3px;
-        height: calc(100% + ((1 - $line-height) * 1em));
-        background: $c-base;
-        box-shadow: 6px 3px 15px rgba(darken($c-accent, 60%), .75);
-      }
+      // &::before {
+      //   display: block;
+      //   content: "";
+      //   position: absolute;
+      //   top: calc((1 - $line-height) * -1em);
+      //   left: 0;
+      //   width: 3px;
+      //   height: calc(100% + ((1 - $line-height) * 1em));
+      //   background: $c-base;
+      //   box-shadow: 6px 3px 15px rgba(darken($c-accent, 60%), .75);
+      // }
 
       &::after {
         display: block;
