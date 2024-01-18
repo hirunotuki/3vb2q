@@ -145,7 +145,7 @@ html {
 }
 .l-header__name {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   word-break: keep-all;
 }
@@ -182,6 +182,7 @@ html {
   font-weight: 700;
   font-feature-settings: "palt";
   line-height: 1;
+  letter-spacing: 0.03em;
   word-break: keep-all;
 }
 .l-header__item::after {
@@ -235,8 +236,7 @@ html {
   box-shadow: 4px 4px 9px -6px rgba(33, 33, 33, 0.45);
   transform: scaleY(0);
   transform-origin: top center;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.93em;
   line-height: 1;
   color: rgba(33, 33, 33, 0);
   transition: transform 200ms ease-in-out, color 100ms ease-out;
@@ -581,7 +581,7 @@ html {
 }
 .l-heading__caption {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2;
   letter-spacing: 0.05em;
   text-align: center;
@@ -621,6 +621,7 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 105px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -638,12 +639,27 @@ html {
   background: linear-gradient(177deg, #fff3e6 9%, 30%, rgba(255, 243, 230, 0.1) 50%, rgba(255, 243, 230, 0) 100%);
   background: linear-gradient(177deg, #fff3e6 9%, 40%, rgba(26, 14, 0, 0.15), rgba(33, 33, 33, 0.24) 90%);
 }
-.p-index-mv__text {
+.p-index-mv__scrolldown {
+  position: relative;
+  height: 60%;
+  writing-mode: sideways-lr;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ffffff;
+}
+.p-index-mv__scrolldown::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(white 0%, 20%, black 90%);
+}
+.p-index-mv__copy {
   position: relative;
   z-index: 1;
-  margin-left: 105px;
-  margin-bottom: 90px;
-  padding-left: 45px;
   font-family: "Helvetica Neue", "Segoe UI", "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   font-size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
   font-weight: 900;
@@ -653,7 +669,7 @@ html {
   color: #ffffff;
   text-shadow: 6px 3px 6px rgba(26, 14, 0, 0.3);
 }
-.p-index-mv__text::before {
+.p-index-mv__copy::before {
   display: block;
   content: "";
   position: absolute;
@@ -664,7 +680,7 @@ html {
   background: #ffffff;
   box-shadow: 6px 3px 15px rgba(26, 14, 0, 0.75);
 }
-.p-index-mv__text::after {
+.p-index-mv__copy::after {
   display: block;
   content: "";
   width: 0;

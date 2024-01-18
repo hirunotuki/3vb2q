@@ -40,7 +40,7 @@
   &__name {
     font: {
       size: 1rem;
-      weight: 500;
+      weight: 700;
     }
 
     line-height: 1;
@@ -87,6 +87,7 @@
     }
 
     line-height: 1;
+    letter-spacing: 0.03em;
     word-break: keep-all;
 
     &::after {
@@ -149,14 +150,12 @@
     position: absolute;
     top: 100%;
     left: 0;
-    // background: $c-base;
     box-shadow: 4px 4px 9px -6px rgba($c-main, .45);
     transform: scaleY(0);
     transform-origin: top center;
 
     font: {
-      size: 1em;
-      weight: 500;
+      size: .93em;
     }
 
     line-height: 1;
