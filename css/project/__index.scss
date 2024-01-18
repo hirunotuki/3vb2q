@@ -34,8 +34,9 @@
       }
     }
 
-    &__scrolldown_line {
+    &__scrolldown_wrapper {
       position: relative;
+      z-index: 1;
       width: fit-content;
       height: 75%;
       margin-right: 21px;
@@ -49,7 +50,6 @@
         width: 3px;
         height: 100%;
         background: linear-gradient(rgba($c-base,0) 0%, 30%,$c-base 90%);
-
       }
 
     }

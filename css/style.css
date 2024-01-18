@@ -639,14 +639,15 @@ html {
   background: linear-gradient(177deg, #fff3e6 9%, 30%, rgba(255, 243, 230, 0.1) 50%, rgba(255, 243, 230, 0) 100%);
   background: linear-gradient(177deg, #fff3e6 9%, 40%, rgba(26, 14, 0, 0.15), rgba(33, 33, 33, 0.24) 90%);
 }
-.p-index-mv__scrolldown_line {
+.p-index-mv__scrolldown_wrapper {
   position: relative;
+  z-index: 1;
   width: -moz-fit-content;
   width: fit-content;
   height: 75%;
   margin-right: 21px;
 }
-.p-index-mv__scrolldown_line::after {
+.p-index-mv__scrolldown_wrapper::after {
   display: block;
   position: absolute;
   content: "";
