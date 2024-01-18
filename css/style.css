@@ -650,10 +650,10 @@ html {
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
-  width: 10px;
+  left: 100%;
+  width: 3px;
   height: 100%;
-  background: linear-gradient(white 0%, 20%, black 90%);
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, 30%, #ffffff 90%);
 }
 .p-index-mv__scrolldown_text {
   height: 100%;
