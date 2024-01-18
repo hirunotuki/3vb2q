@@ -643,8 +643,8 @@ html {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  height: 60%;
-  margin-right: 30px;
+  height: 75%;
+  margin-right: 21px;
 }
 .p-index-mv__scrolldown_line::after {
   display: block;
@@ -652,7 +652,7 @@ html {
   content: "";
   top: 0;
   left: 100%;
-  width: 4.5px;
+  width: 3px;
   height: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, 30%, #ffffff 90%);
 }
@@ -663,6 +663,7 @@ html {
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   font-size: 1.5rem;
+  font-weight: 900;
   font-style: italic;
   color: #ffffff;
 }
