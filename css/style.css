@@ -169,7 +169,7 @@ html {
   font-size: 0.93em;
   line-height: 1;
   color: rgba(33, 33, 33, 0);
-  transition: transform 200ms ease-in-out, color 100ms ease-out;
+  transition: transform 200ms ease-in-out, color 100ms ease-out, box-shadow 100ms ease-in-out;
 }
 .l-header__dropdown_menu:hover {
   box-shadow: none;

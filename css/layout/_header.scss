@@ -161,7 +161,7 @@
     line-height: 1;
     color: rgba($c-main, 0);
     transition: transform 200ms ease-in-out,
-    color 100ms ease-out;
+    color 100ms ease-out,box-shadow 100ms ease-in-out;
 
     &:hover{
       box-shadow: none;
