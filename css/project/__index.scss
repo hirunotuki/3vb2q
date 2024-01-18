@@ -34,17 +34,10 @@
       }
     }
 
-    &__scrolldown {
+    &__scrolldown_line {
       position: relative;
+      width: fit-content;
       height: 60%;
-      writing-mode: sideways-lr;
-
-      font: {
-        size: 1.5rem;
-        style: italic;
-      }
-
-      color:$c-base;
 
       &::after {
         display: block;
@@ -58,6 +51,17 @@
 
       }
 
+    }
+    &__scrolldown_text{
+      height: 100%;
+      width: fit-content;
+      transform: rotate(180deg);
+      writing-mode: sideways-lr;
+      font: {
+        size: 1.5rem;
+        style: italic;
+      }
+      color:$c-base;
     }
 
     &__copy {
