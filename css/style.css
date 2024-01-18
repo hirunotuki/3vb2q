@@ -154,12 +154,11 @@ html {
 }
 
 .l-header__dropdown_menu {
-  display: block;
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-width: 100%;
+  width: 100%;
   border-radius: 9px;
   position: absolute;
   top: 100%;
@@ -171,6 +170,9 @@ html {
   line-height: 1;
   color: rgba(33, 33, 33, 0);
   transition: transform 200ms ease-in-out, color 100ms ease-out;
+}
+.l-header__dropdown_menu:hover {
+  box-shadow: none;
 }
 .l-header__sublist {
   display: flex;
@@ -206,8 +208,8 @@ html {
   transition: 120ms ease-in-out;
 }
 .l-header__subitem:hover {
-  background: rgba(230, 201, 169, 0.1);
-  box-shadow: 3px 3px 1px 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 3px 3px 1px 1px rgba(33, 33, 33, 0.6);
   transform: translateX(-2px);
   z-index: 1;
 }

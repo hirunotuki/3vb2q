@@ -142,10 +142,10 @@
 .l-header {
 
   &__dropdown_menu {
-    display: block;
+    // display: block;
     height: fit-content;
     width: fit-content;
-    min-width: 100%;
+    width: 100%;
     border-radius: 9px;
     position: absolute;
     top: 100%;
@@ -162,6 +162,10 @@
     color: rgba($c-main, 0);
     transition: transform 200ms ease-in-out,
     color 100ms ease-out;
+
+    &:hover{
+      box-shadow: none;
+    }
   }
 
   &__sublist {
@@ -201,8 +205,8 @@
     }
 
     &:hover {
-      background: rgba($c-accent-pale, .1);
-      box-shadow: 3px 3px 1px 1px rgba($c-base, .6);
+      background: rgba($c-base, .6);
+      box-shadow: 3px 3px 1px 1px rgba($c-main, .6);
       transform: translateX(-2px);
       z-index: 1;
 
