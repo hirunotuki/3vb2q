@@ -671,12 +671,12 @@ html {
 .p-index-mv__copy {
   position: relative;
   z-index: 1;
-  font-family: "Helvetica Neue", "Segoe UI", "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   font-size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
   font-weight: 900;
   font-feature-settings: "palt";
   line-height: 1.2;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.075em;
   color: #ffffff;
   text-shadow: 6px 3px 6px rgba(26, 14, 0, 0.3);
 }

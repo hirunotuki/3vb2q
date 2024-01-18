@@ -78,7 +78,7 @@
       // padding-left: 45px;
 
       font: {
-        family: $v-ff-default--latin, 'Zen Kaku Gothic New', $v-ff-default--jpn, sans-serif;
+        family: $v-ff-default--latin, $v-ff-default--jpn, sans-serif;
         // size: 5rem;
         size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
         weight: 900;
@@ -87,7 +87,7 @@
 
       $line-height: 1.2;
       line-height: $line-height;
-      letter-spacing: .03em;
+      letter-spacing: .075em;
       color: $c-base;
       text-shadow: 6px 3px 6px rgba(darken($c-accent, 60%), .3);
 
