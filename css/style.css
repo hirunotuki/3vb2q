@@ -569,8 +569,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(177deg, #fff3e6 9%, 30%, rgba(255, 243, 230, 0.1) 50%, rgba(255, 243, 230, 0) 100%);
-  background: linear-gradient(177deg, #fff3e6 9%, 40%, rgba(26, 14, 0, 0.15), rgba(33, 33, 33, 0.24) 90%);
+  background: linear-gradient(177deg, #ffe5c7 9%, 40%, rgba(204, 169, 128, 0.15), rgba(33, 33, 33, 0.24) 90%);
 }
 .p-index-mv__scrolldown_wrapper {
   position: relative;
@@ -588,7 +587,7 @@ html {
   left: 100%;
   width: 3px;
   height: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0) 0%, 30%, #ffffff 90%);
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, 45%, #ffffff 90%);
 }
 .p-index-mv__scrolldown_text {
   height: 100%;
@@ -1051,7 +1050,7 @@ html {
 }
 .p-members-card__name_jpn {
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1;
   letter-spacing: 0.2em;
 }
