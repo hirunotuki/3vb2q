@@ -122,4 +122,3 @@ $(() => {
     pushGridArray(pos.x, pos.y, grid.outerHeight());
   }
 })
-
