@@ -1149,7 +1149,7 @@ html {
   width: max-content;
   max-width: 780px;
   margin: auto;
-  font-family: "Helvetica Neue", "Segoe UI", "Zen Kaku Gothic New", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI", "" Zen Kaku Gothic Antique "", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   line-height: 2.5;
   display: flex;
   flex-direction: column;
