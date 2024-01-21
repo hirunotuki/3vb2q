@@ -266,6 +266,10 @@
     align-items: center;
     gap: clamp(36px, 0.333rem + 2.344vw, 51px)
   }
+  &__sns_wrapper{
+    width: fit-content;
+    height: fit-content;
+  }
 
   &__sns_link {
     width: fit-content;
