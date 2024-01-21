@@ -73,6 +73,7 @@
     &__caption {
       position: relative;
       z-index: 1;
+      padding-left: 4.5px;
 
       font: {
         family: $v-ff-default--latin, 'Zen Kaku Gothic Antique', $v-ff-default--jpn, sans-serif;
@@ -84,7 +85,7 @@
       line-height: $lh;
       letter-spacing: .06em;
       color:$c-base;
-      text-shadow: 2px 1px 3px rgba(darken($c-accent, 60%), .45);
+      text-shadow: 2px 2px 4.5px rgba(darken($c-accent, 60%), .45);
       @include line-height-crop($lh)
     }
 
