@@ -75,8 +75,9 @@
       z-index: 1;
 
       font: {
-        family: $v-ff-default--latin,'Zen Kaku Gothic Antique', $v-ff-default--jpn, sans-serif;
-        size: 1.35rem;
+        family: $v-ff-default--latin, 'Zen Kaku Gothic Antique', $v-ff-default--jpn, sans-serif;
+        size: 1.2rem;
+        weight: 600;
       }
 
       $lh: 1.75;
@@ -92,7 +93,7 @@
       z-index: 1;
 
       font: {
-        family: $v-ff-default--latin,'Zen Kaku Gothic Antique', $v-ff-default--jpn, sans-serif;
+        family: $v-ff-default--latin, $v-ff-default--jpn, sans-serif;
         size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
         weight: 900;
         feature-settings: 'palt';
@@ -104,13 +105,7 @@
       color: $c-base;
       text-shadow: 6px 3px 6px rgba(darken($c-accent, 60%), .3);
 
-      @include line-height-crop($lh) // &::after {
-      //   display: block;
-      //   content: "";
-      //   width: 0;
-      //   height: 0;
-      //   margin-bottom:calc((1 - #{$lh}) * .5em);
-      // }
+      @include line-height-crop($lh)
     }
   }
 

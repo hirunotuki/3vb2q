@@ -248,6 +248,7 @@ html {
   gap: clamp(36px, 0.333rem + 2.344vw, 51px);
 }
 .l-header__sns_wrapper {
+  position: relative;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -264,6 +265,12 @@ html {
 }
 .l-header__sns_icon--ig {
   height: 23px;
+}
+.l-header__x_timeline {
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 45vh;
 }
 
 .js-header.narrow {
@@ -616,7 +623,8 @@ html {
   position: relative;
   z-index: 1;
   font-family: "Helvetica Neue", "Segoe UI", "Zen Kaku Gothic Antique", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   line-height: 1.75;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -639,7 +647,7 @@ html {
 .p-index-mv__copy {
   position: relative;
   z-index: 1;
-  font-family: "Helvetica Neue", "Segoe UI", "Zen Kaku Gothic Antique", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   font-size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
   font-weight: 900;
   font-feature-settings: "palt";

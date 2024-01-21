@@ -267,6 +267,7 @@
     gap: clamp(36px, 0.333rem + 2.344vw, 51px)
   }
   &__sns_wrapper{
+    position: relative;
     width: fit-content;
     height: fit-content;
   }
@@ -282,6 +283,11 @@
     &--ig {
       height: 23px;
     }
+  }
+  &__x_timeline{
+    position: absolute;
+    height: fit-content;
+    max-height: 45vh;
   }
 }
 
