@@ -599,10 +599,36 @@ html {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.p-index-mv__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.p-index-mv__caption {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  color: #ffffff;
+}
+.p-index-mv__caption::before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: calc((1 - 2.5) * 0.5em);
+}
+.p-index-mv__caption::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-bottom: calc((1 - 2.5) * 0.5em);
+}
 .p-index-mv__copy {
   position: relative;
   z-index: 1;
-  font-family: "Helvetica Neue", "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   font-size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
   font-weight: 900;
   font-feature-settings: "palt";
@@ -610,6 +636,13 @@ html {
   letter-spacing: 0.075em;
   color: #ffffff;
   text-shadow: 6px 3px 6px rgba(26, 14, 0, 0.3);
+}
+.p-index-mv__copy::before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: calc((1 - 1.2) * 0.5em);
 }
 .p-index-mv__copy::after {
   display: block;

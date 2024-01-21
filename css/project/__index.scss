@@ -23,7 +23,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(177deg, lighten($c-accent, 30%) 9%, 40%, rgba(desaturate($c-accent,57%), .06), rgba($c-main, .24) 90%);
+        background: linear-gradient(177deg, lighten($c-accent, 30%) 9%, 40%, rgba(desaturate($c-accent, 57%), .06), rgba($c-main, .24) 90%);
       }
     }
 
@@ -42,47 +42,72 @@
         left: 100%;
         width: 3px;
         height: 100%;
-        background: linear-gradient(rgba($c-base,0) 0%, 45%,$c-base 90%);
+        background: linear-gradient(rgba($c-base, 0) 0%, 45%, $c-base 90%);
       }
 
     }
-    &__scrolldown_text{
+
+    &__scrolldown_text {
       height: 100%;
       width: fit-content;
       transform: rotate(180deg);
       writing-mode: vertical-lr;
+
       font: {
         size: 1.5rem;
-        weight:900;
+        weight: 900;
         style: italic;
       }
+
       letter-spacing: .03em;
       color:$c-base;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    &__caption {
+      position: relative;
+      z-index: 1;
+
+      font: {
+        size: 1.5rem;
+      }
+
+      $lh: 2.5;
+      line-height: $lh;
+      color:$c-base;
+      @include line-height-crop($lh)
     }
 
     &__copy {
       position: relative;
       z-index: 1;
+
       font: {
-        family: $v-ff-default--latin, $v-ff-default--jpn, sans-serif;
+        // family: $v-ff-default--latin, $v-ff-default--jpn, sans-serif;
         size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
         weight: 900;
         feature-settings: 'palt';
       }
 
-      $line-height: 1.2;
-      line-height: $line-height;
+      $lh: 1.2;
+      line-height: $lh;
       letter-spacing: .075em;
       color: $c-base;
       text-shadow: 6px 3px 6px rgba(darken($c-accent, 60%), .3);
 
-      &::after {
-        display: block;
-        content: "";
-        width: 0;
-        height: 0;
-        margin-bottom:calc((1 - #{$line-height}) * .5em);
-      }
+      @include line-height-crop($lh) // &::after {
+      //   display: block;
+      //   content: "";
+      //   width: 0;
+      //   height: 0;
+      //   margin-bottom:calc((1 - #{$lh}) * .5em);
+      // }
     }
   }
 
