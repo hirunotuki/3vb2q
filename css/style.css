@@ -272,6 +272,14 @@ html {
   height: fit-content;
   max-height: 45vh;
 }
+.l-header__note_new_article {
+  position: absolute;
+  right: 9px;
+  top: 42px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 485px;
+}
 
 .js-header.narrow {
   height: 60px;

@@ -255,7 +255,7 @@
 }
 
 .l-header {
-
+  $sns-gap:clamp(36px, 0.333rem + 2.344vw, 51px);
   &__sns {
     width: fit-content;
     height: fit-content;
@@ -264,7 +264,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: clamp(36px, 0.333rem + 2.344vw, 51px)
+    gap: $sns-gap;
   }
   &__sns_wrapper{
     position: relative;
@@ -288,6 +288,13 @@
     position: absolute;
     height: fit-content;
     max-height: 45vh;
+  }
+  &__note_new_article{
+    position: absolute;
+    right: 9px;
+    top: 42px;
+    width: fit-content;
+    max-width: 485px;
   }
 }
 
