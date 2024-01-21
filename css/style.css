@@ -274,10 +274,10 @@ html {
 }
 .l-header__note_new_article {
   position: absolute;
-  right: 9px;
-  top: 42px;
-  width: -moz-fit-content;
-  width: fit-content;
+  right: -6px;
+  top: 36px;
+  width: -moz-max-content;
+  width: max-content;
   max-width: 485px;
 }
 

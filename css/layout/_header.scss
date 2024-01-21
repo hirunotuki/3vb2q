@@ -291,9 +291,9 @@
   }
   &__note_new_article{
     position: absolute;
-    right: 9px;
-    top: 42px;
-    width: fit-content;
+    right: -6px;
+    top: 36px;
+    width: max-content;
     max-width: 485px;
   }
 }
