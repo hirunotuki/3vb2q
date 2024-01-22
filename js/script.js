@@ -30,6 +30,18 @@ $(() => {
   })
 })
 
+// sns prevew
+$(() => {
+  $('.js-header_sns').on('mouseover', () => {
+    if (!$(Event.currentTarget).hasClass('is-active')) {
+      $('.js-header_sns.is-active').removeClass('is-active');
+      $('.js-sns_prevew.is-unfolded').removeClass('is-unfolded')
+      $(Event.currentTarget).addClass('is-active')
+      $(Event.currentTarget).find('.js-sns_prevew').addClass('is-unfolded')
+    }
+  })
+})
+
 // place cards
 $(() => {
   $(window).on('load', () => {

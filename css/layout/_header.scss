@@ -254,6 +254,15 @@
   }
 }
 
+%__sns_prevew{
+  visibility:hidden;
+  opacity: 0;
+  &.is-unfolded{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .l-header {
   $sns-gap:clamp(36px, 0.333rem + 2.344vw, 51px);
   &__sns {
@@ -285,11 +294,13 @@
     }
   }
   &__x_timeline{
+    @extend %__sns_prevew;
     position: absolute;
     height: fit-content;
     max-height: 45vh;
   }
   &__note_new_article{
+    @extend %__sns_prevew;
     position: absolute;
     right: -6px;
     top: 36px;

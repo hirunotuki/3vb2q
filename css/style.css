@@ -235,6 +235,15 @@ html {
   transition: 300ms;
 }
 
+.l-header__note_new_article, .l-header__x_timeline {
+  visibility: hidden;
+  opacity: 0;
+}
+.is-unfolded.l-header__note_new_article, .is-unfolded.l-header__x_timeline {
+  visibility: visible;
+  opacity: 1;
+}
+
 .l-header__sns {
   width: -moz-fit-content;
   width: fit-content;
