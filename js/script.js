@@ -35,7 +35,7 @@ $(() => {
   $(window).on('load', () => {
     unfoldSnsPrevew()
     function unfoldSnsPrevew() {
-      $('.js-header_sns').on('mouseover', () => {
+      $('.js-header_sns').on('mouseenter', () => {
         if (!$(Event.currentTarget).hasClass('is-active')) {
           $('.js-header_sns.is-active').removeClass('is-active');
           $('.js-sns_prevew.is-unfolded').removeClass('is-unfolded')
