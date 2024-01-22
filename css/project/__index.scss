@@ -78,14 +78,14 @@
       font: {
         family: $v-ff-default--latin, 'Zen Kaku Gothic Antique', $v-ff-default--jpn, sans-serif;
         size: 1.2rem;
-        // weight: 600;
+        weight: 600;
       }
 
       $lh: 1.75;
       line-height: $lh;
       letter-spacing: .06em;
-      color:$c-base;
-      text-shadow: 2px 2px 4.5px rgba(darken($c-accent, 60%), .45);
+      // color:$c-base;
+      text-shadow: 2px 2px 4.5px rgba(darken($c-accent, 60%), .21);
       @include line-height-crop($lh)
     }
 
