@@ -264,10 +264,25 @@ html {
   height: fit-content;
 }
 .l-header__sns_link {
+  position: relative;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+.l-header__sns_link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 6px);
+  height: 0;
+  background: #212121;
+}
+.l-header__sns_link.is-active {
+  height: 4.5px;
 }
 .l-header__sns_icon {
   height: 21px;

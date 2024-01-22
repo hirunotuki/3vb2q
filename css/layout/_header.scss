@@ -282,8 +282,23 @@
   }
 
   &__sns_link {
+    position: relative;
     width: fit-content;
     height: fit-content;
+    &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 6px);
+      height: 0;
+      background: $c-main;
+    }
+    &.is-active{
+      height: 4.5px;
+    }
   }
 
   &__sns_icon {
