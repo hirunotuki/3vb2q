@@ -33,17 +33,14 @@ $(() => {
 // sns prevew
 $(() => {
   $(window).on('load', () => {
-    unfoldSnsPrevew()
-    function unfoldSnsPrevew() {
-      $('.js-header_sns').on('mouseenter', () => {
-        if (!$(Event.currentTarget).hasClass('is-active')) {
-          $('.js-header_sns.is-active').removeClass('is-active');
-          $('.js-sns_prevew.is-unfolded').removeClass('is-unfolded')
-          $(Event.currentTarget).addClass('is-active')
-          $(Event.currentTarget).find('.js-sns_prevew').addClass('is-unfolded')
-        }
-      })
-    }
+    $('.js-header_sns').on('mouseenter', () => {
+      if (!$(Event.currentTarget).hasClass('is-active')) {
+        $('.js-header_sns.is-active').removeClass('is-active');
+        $('.js-sns_prevew.is-unfolded').removeClass('is-unfolded')
+        $(Event.currentTarget).addClass('is-active')
+        $(Event.currentTarget).find('.js-sns_prevew').addClass('is-unfolded')
+      }
+    })
   })
 })
 // $(() => {
