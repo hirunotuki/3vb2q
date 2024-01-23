@@ -34,6 +34,7 @@ $(() => {
 $(() => {
   $(window).on('load', () => {
     $('.js-header_sns').on('mouseenter', () => {
+      console.log("mouse entered")
       if (!$(Event.currentTarget).hasClass('is-active')) {
         $('.js-header_sns.is-active').removeClass('is-active');
         $('.js-sns_prevew.is-unfolded').removeClass('is-unfolded')
