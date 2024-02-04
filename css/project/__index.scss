@@ -95,7 +95,7 @@
 
       font: {
         family: $v-ff-default--latin, $v-ff-default--jpn, sans-serif;
-        size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
+        size:#{fluid(4rem,5.5rem,1280px,1920px)};
         weight: 900;
         feature-settings: 'palt';
       }

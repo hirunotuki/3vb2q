@@ -236,12 +236,10 @@ html {
 }
 
 .l-header__note_new_article, .l-header__x_timeline {
-  visibility: hidden;
-  opacity: 0;
+  display: none;
 }
 .is-unfolded.l-header__note_new_article, .is-unfolded.l-header__x_timeline {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 
 .l-header__sns {
@@ -254,7 +252,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: clamp(36px, 0.333rem + 2.344vw, 51px);
+  gap: clamp(2.12rem, 2.34vw + 0.35rem, 3rem);
 }
 .l-header__sns_wrapper {
   position: relative;
@@ -263,26 +261,26 @@ html {
   height: -moz-fit-content;
   height: fit-content;
 }
-.l-header__sns_link {
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.l-header__sns_link::after {
+.l-header__sns_wrapper::after {
   display: block;
   content: "";
   position: absolute;
-  top: 12px;
+  top: calc(100% + 6px);
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% + 6px);
   height: 0;
   background: #212121;
 }
-.l-header__sns_link.is-active {
+.l-header__sns_wrapper.is-active::after {
   height: 4.5px;
+}
+.l-header__sns_link {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .l-header__sns_icon {
   height: 21px;
@@ -292,13 +290,14 @@ html {
 }
 .l-header__x_timeline {
   position: absolute;
-  height: -moz-fit-content;
-  height: fit-content;
-  max-height: 45vh;
+  top: 45px;
+  right: calc(-1 * (clamp(4.24rem, 4.69vw + 0.71rem, 6rem) + 48px));
+  height: -moz-max-content;
+  height: max-content;
 }
 .l-header__note_new_article {
   position: absolute;
-  right: -6px;
+  right: -9px;
   top: 36px;
   width: -moz-max-content;
   width: max-content;
@@ -680,7 +679,7 @@ html {
   position: relative;
   z-index: 1;
   font-family: "Helvetica Neue", "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-  font-size: clamp(4rem, 3.1rem + 2.25vw, 5.5rem);
+  font-size: clamp(4rem, 3.98vw + 1rem, 5.5rem);
   font-weight: 900;
   font-feature-settings: "palt";
   line-height: 1.2;

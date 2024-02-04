@@ -255,16 +255,21 @@
 }
 
 %__sns_prevew{
-  visibility:hidden;
-  opacity: 0;
+  // visibility:hidden;
+  display: none;
+  // opacity: 0;
   &.is-unfolded{
-    visibility: visible;
-    opacity: 1;
+    // visibility: visible;
+    display: block;
+    // opacity: 1;
+
   }
 }
 
 .l-header {
-  $sns-gap:clamp(36px, 0.333rem + 2.344vw, 51px);
+  // $sns-gap:clamp(36px, 0.333rem + 2.344vw, 51px);
+
+  // $sns-gap:clamp(36px,calc(36px / 1280px * 100),51px);
   &__sns {
     width: fit-content;
     height: fit-content;
@@ -273,15 +278,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: $sns-gap;
+    // gap: $sns-gap;
+    gap:#{fluid(36px,51px,1280px,1920px)}
   }
   &__sns_wrapper{
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  &__sns_link {
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -289,7 +289,7 @@
       display: block;
       content: "";
       position: absolute;
-      top: 12px;
+      top: calc(100% + 6px);
       left: 50%;
       transform: translateX(-50%);
       width: calc(100% + 6px);
@@ -297,8 +297,16 @@
       background: $c-main;
     }
     &.is-active{
-      height: 4.5px;
+      &::after{
+        height: 4.5px;
+      }
     }
+  }
+
+  &__sns_link {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
   }
 
   &__sns_icon {
@@ -311,13 +319,16 @@
   &__x_timeline{
     @extend %__sns_prevew;
     position: absolute;
-    height: fit-content;
-    max-height: 45vh;
+    top:45px;
+    right:calc(-1 * (#{fluid(2 * 36px,2 * 51px,1280px,1920px)} + #{21px * 2 + 6px}));
+    height: max-content
+    // height: fit-content;
+    // max-height: 45vh;
   }
   &__note_new_article{
     @extend %__sns_prevew;
     position: absolute;
-    right: -6px;
+    right: -9px;
     top: 36px;
     width: max-content;
     max-width: 485px;

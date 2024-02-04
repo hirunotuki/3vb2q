@@ -1,0 +1,61 @@
+@use "./variable" as *;
+@use "sass:math";
+
+@function get-unit($value) {
+  @return str-slice($value * 0 + "", 2, -1);
+}
+
+@function round($number, $decimals: 0) {
+  $n: 1;
+
+  @if $decimals >0 {
+    @for $i from 1 through $decimals {
+      $n: $n * 10;
+    }
+  }
+
+  @return math.div(math.round($number * $n), $n);
+}
+
+@function px-to-rem($px-value) {
+  $rem-value: math.div($px-value, $v-fontsize) * 1rem;
+  @return $rem-value;
+}
+
+@function rem-to-px($rem-value) {
+  $px-value: math.div($rem-value, 1rem) * $v-fontsize;
+  @return $px-value;
+}
+
+@function cast-to-rem($value) {
+  $unit: get-unit($value);
+
+  @if $unit =="rem" {
+    @return $value;
+  }
+
+  @else {
+    @return px-to-rem($value);
+  }
+}
+
+@function cast-to-px($value){
+  $unit: get-unit($value);
+
+  @if $unit =="px" {
+    @return $value;
+  }
+
+  @else {
+    @return rem-to-px($value);
+  }
+}
+
+@function fluid($min-size, $max-size, $min-breakpoint, $max-breakpoint, $unit: vw) {
+  $slope: math.div(cast-to-px($max-size) - cast-to-px($min-size), $max-breakpoint - $min-breakpoint);
+  $slope-to-unit: round($slope * 100, 2);
+  $intercept-rem: round(cast-to-rem(cast-to-px($min-size) - $slope * $min-breakpoint), 2);
+  $min-size-rem: round(cast-to-rem($min-size), 2);
+  $max-size-rem: round(cast-to-rem($max-size), 2);
+  @return clamp(#{$min-size-rem}, #{$slope-to-unit}#{$unit} + #{$intercept-rem}, #{$max-size-rem});
+}

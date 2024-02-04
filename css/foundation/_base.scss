@@ -1,5 +1,5 @@
-@use "./color" as *;
 @use "./variable" as *;
+@use "./color" as *;
 
 *,
 *:before,
@@ -13,8 +13,8 @@ html {
   font: {
     // family:"agenda-one","source-han-sans-japanese",sans-serif;
     // family: 'Helvetica Neue', 'Segoe UI', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-    family: $v-ff-default--latin,$v-ff-default--jpn,sans-serif;
-    size: 17px;
+    family: $v-ff-default--latin, $v-ff-default--jpn, sans-serif;
+    size: $v-fontsize;
     weight: 500;
   }
 

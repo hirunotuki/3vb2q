@@ -1,2 +1,9 @@
+$v-fontsize:17px;
 $v-ff-default--latin:'Helvetica Neue', 'Segoe UI';
 $v-ff-default--jpn:'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans';
+
+$v-breakpoint: (
+  sm: 'width < 768px',
+  md: '768px <= width < 1024px',
+  lg: '1024px < width'
+  ) !default;
