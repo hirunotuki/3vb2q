@@ -10,14 +10,7 @@ $(() => {
     console.log('resized')
     container.css('width', "")
     placeCard();
-  })
-
-  function placeCard() {
-    containerW = container.width();
-    colW = $('.js-card').outerWidth() + gapXMin;
-    membersResize();
-    applyGrid();
-  }
+  })  
 
   let gridArray,
     colW,
@@ -28,6 +21,13 @@ $(() => {
     numOfCol,
     container,
     containerW;
+
+  function placeCard() {
+    containerW = container.width();
+    colW = $('.js-card').outerWidth() + gapXMin;
+    membersResize();
+    applyGrid();
+  }
 
   function applyGrid() {
     gridArray = [];
