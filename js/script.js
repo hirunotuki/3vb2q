@@ -9,7 +9,7 @@ $(() => {
   }, 5000);
 
   //load header & footer
-  // $('.js-header').load('https://hirunotuki.github.io/i-vote_24/include/header.html')
+  $('.js-header').load('https://hirunotuki.github.io/i-vote_24/include/header.html')
   $('.js-footer').load('https://hirunotuki.github.io/i-vote_24/include/footer.html')
 
   // shrink header on scroll
